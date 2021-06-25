@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Extra Condensed', sans-serif;;
+}
+
+
+html,body{
+    height: 100%;
+}
+
+.parent{
+    display: flex;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: blueviolet;
+}
+
+.sidebar-pos{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.img-sidebar{text-align: center;}
+
+.img-sidebar img{
+    width: 80%;
+    max-width: 100%;
+    border: 4px solid rgb(108, 87, 128) ;
+    border-radius: 50%;
+}
+
+.menu{
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+
+}
+
+.menu a{
+    color: white;
+    opacity: 0.4;
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+.menu a.selected{
+    opacity: 1;
+
+}
+
+.content{
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 3%;    
+  
+}
+
+section.descricao{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section.descricao h2{
+    color: slateblue;
+    font-size: 50px;
+}
+
+section.descricao h2 > span{
+    color: blueviolet;
+}
+
+section.descricao h3{
+    margin: 15px 0;
+    color: rgb(173, 162, 184);
+    font-size: 26px;
+}
+
+section.descricao p{
+    color: blueviolet;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+.sobre{
+    margin-top: 40px;
+    padding: 20px;
+}
